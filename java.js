@@ -15,9 +15,18 @@ function computerchoice () {
 }
     function userInput () {
        let input = prompt ("Rock, paper, scissors");
-       let answer = input .charAt(0).toUpperCase() + input .slice(1).toLowerCase()
+       let answer = input .charAt(0).toUpperCase() + input .slice(1).toLowerCase();
        return answer;
     }
 
-console.log(computerchoice());
-console.log(userInput());
+
+    function comparison () {
+    
+     if (computerchoice() === userInput()) {
+         return ("YOU ARE THE WIN");
+    }
+        else return ("i win");
+    }
+
+    console.log(computerchoice());
+    console.log(comparison());
