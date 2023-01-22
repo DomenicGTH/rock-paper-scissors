@@ -12,7 +12,12 @@ function computerchoice () {
     else if (randomNum == 2) {
         return "Scissors";
     }
-    
 }
+    function userInput () {
+       let input = prompt ("Rock, paper, scissors");
+       let answer = input .charAt(0).toUpperCase() + input .slice(1).toLowerCase()
+       return answer;
+    }
 
 console.log(computerchoice());
+console.log(userInput());
