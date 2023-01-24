@@ -1,6 +1,7 @@
 let computer = 0
 let player = 0
 let rounds = 0
+let draws = 0
 
 function comparison() {
 
@@ -8,7 +9,7 @@ function comparison() {
     let b = computerchoice()
 
     if (a === b) {
-        return
+        draws++;
     } 
     
     if ((a === "Rock" && b === "Scissors") ||
@@ -32,12 +33,19 @@ function scoretracker() {
         console.log(computer, 'computer')
         console.log(player, 'player')
         console.log(rounds, 'rounds')
+        console.log(draws, 'draws')
         comparison();
-        if (computer === 5) {
-            console.log("game over, you lost");
+
+        if (rounds === 9) {
+            console.log("Game over");
         }
-        if (player === 5) {
-            console.log('congratulation you win');
+        if (computer === 5) {
+            rounds = 10
+            console.log("You lost! Total score = player -" + player + "- computer -" + computer + "- and draws -" + draws + "-");
+        }
+        if (player === 5) { 
+            rounds = 10
+            console.log("You won! Total score = player -" + player + "- computer -" + computer + "- and draws -" + draws + "-");
         }
     }
 }

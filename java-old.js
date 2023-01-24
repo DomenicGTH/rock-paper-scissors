@@ -1,3 +1,5 @@
+// old code, using this as reference for new js file
+
 
 let rounds = 0
 let computer = 0
