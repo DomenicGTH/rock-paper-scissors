@@ -1,1 +1,1 @@
-# rock-paper-scissors
+Rock Paper Scissors built using basic Javascript knowledge, console UI only. (Odin Project)
