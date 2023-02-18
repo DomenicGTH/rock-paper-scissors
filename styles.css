@@ -1,0 +1,38 @@
+#title {
+    font-size: 25px;
+    font-weight: 500;
+    font-variant: small-caps;
+    background-color: rgb(143, 58, 240);
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 10px;
+    font-family: fantasy;
+    
+}
+
+#stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(74, 57, 60);
+    color: white;
+    padding-left: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#choices {
+    display: flex;
+    background-color: rgb(126, 108, 113);
+    justify-content: space-around;
+    padding: 150px;
+}
+
+.choice {
+    width: 100px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    border-radius: 20px;
+    
+}

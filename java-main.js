@@ -11,18 +11,18 @@ let results = document.querySelector('#results');
 let draw = document.querySelector('#draw');
 let roundsAmount = document.querySelector('#rounds');
 const buttonChoice = document.querySelectorAll('.choice');
-let end = document.querySelector('#end');
+// let end = document.querySelector('#end');
 
 buttonChoice.forEach((button) =>
   button.addEventListener('click', () => {
     buttonanswer = button.textContent;
     computerchoice();
     comparison();
-    playerchoice.textContent = `Player chose ${buttonanswer} --- score: ${player}`;
-    computerscore.textContent = `Computer chose ${computeranswer} --- score: ${computer}`;
+    playerchoice.textContent = `Player chose: ${buttonanswer}| Score: ${player}`;
+    computerscore.textContent = `Computer chose: ${computeranswer}| Score: ${computer}`;
     draw.textContent = `Draws: ${draws}`;
     roundsAmount.textContent = `Rounds: ${rounds}`;
-    end.textContent = `${endgame}`
+    // end.textContent = `${endgame}`
 
   }),
 );
